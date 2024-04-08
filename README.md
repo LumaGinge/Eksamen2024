@@ -25,3 +25,6 @@ Herunder er der en guide, til hvordan man nemt og hurtigt kommer igang med at br
         Sørg for at sige ja til geolokation, når den spørger, ellers er det ikke muligt at bruge appen. 
 
         5. Tryk på "Daily Nutri" for at se et overblik over dit daglige indtag. 
+
+
+        Ændringer bla bla 
