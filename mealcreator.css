@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+
+header {
+    height: 160px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*Jeg placerer logoet foran andre elementer*/
+    z-index: 2;
+}
+
+.menu {
+    height: 100px;
+    width: 50%;
+    z-index: 1;
+    top: 10px;
+    left: 370px;
+    right: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+}
+
+a {
+    /*!important overskriver alle regler, og bliver mest vigtig*/
+    text-decoration: none !important;
+    color: #757575 !important;
+}
+
+.container {
+    height: 800px;
+    width: 1150px;
+    border: 2px solid #569bd5;
+    border-radius: 10px;
+    margin: 50px auto;
+    position: relative;
+    padding: 20px;
+    overflow-y: auto; /* Tilføj en lodret scrollbar, hvis indholdet overstiger den maksimale højde */
+
+}
+
+h1 {
+    font-size: 32px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+}
+
+
+.bluebutton {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #569bd5;
+    cursor: pointer;
+    /* Ændrer markøren til en hånd, når der holdes over knappen */
+}
+
+.greenbutton {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #Def6d8;
+    cursor: pointer;
+    /* Ændrer markøren til en hånd, når der holdes over knappen */
+}
+
+.buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.foodinspectorbutton {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #91c789;
+    color: #FFFFFF;
+    border-radius: 7px;
+    /* Buede kanter */
+    text-decoration: none;
+    /* Fjerner understregning fra link */
+    cursor: pointer;
+    /* Ændrer markøren til en hånd, når der holdes over knappen */
+    font-size: 14px;
+}
+
+
+
+.grey-line-container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #BDBDBD;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column; 
+    border-radius: 2%;
+}
+
+.meal-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.meal-inputs * {
+    margin-bottom: 10px;
+}
+
+
+.meal-inputs select {
+    margin-bottom: 0;
+}
+
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    flex-direction: row;
+    margin-bottom: 1px !important;
+}
+
+.meal-inputs label[for="inputDate"] {
+    margin-bottom: 10px;
+}
+
+#addMealButton {
+    align-self: flex-end; /* Placer knappen til venstre i sin container */
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #91c789;
+    color: #FFFFFF;
+    border-radius: 7px;
+    /* Buede kanter */
+    text-decoration: none;
+    /* Fjerner understregning fra link */
+    cursor: pointer;
+    /* Ændrer markøren til en hånd, når der holdes over knappen */
+    font-size: 14px;
+}
+
+#addIngredientButton{
+    align-self: flex-end; /* Placer knappen til venstre i sin container */
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #91c789;
+    color: #FFFFFF;
+    border-radius: 7px;
+    /* Buede kanter */
+    text-decoration: none;
+    /* Fjerner understregning fra link */
+    cursor: pointer;
+    /* Ændrer markøren til en hånd, når der holdes over knappen */
+    font-size: 12px;
+}
+
+
+/*Tabel layout herunder*/
+#creatorTable {
+    width: 100%;
+    margin-top: 10px;
+    border-spacing: 0 8px;
+}
+
+#creatorTable th {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    color: #9e9e9e;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#creatorTable td {
+    background-color: #DEF6D8;
+    border: none;
+    padding: 16px;
+    text-align: center;
+}
+
+#creatorTable tbody tr td:first-child {
+    border-bottom-left-radius: 11px;
+    border-top-left-radius: 11px;
+  
+}
+
+#creatorTable tbody tr td:last-child {
+    border-bottom-right-radius: 11px;
+    border-top-right-radius: 11px;
+    
+}
+
+.editButton, .deleteButton, .infoButton {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none; 
+    background-color: transparent; /* Fjerner baggrundsfarven på billedet */
+    padding: 0; 
+    margin: 0; 
+}
+
+.editButton img, .deleteButton img, .infoButton img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

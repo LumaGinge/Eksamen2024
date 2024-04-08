@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriTracker</title>
+  <link rel="stylesheet" href="mealcreator.css" />
+</head>
+
+<body>
+
+  <header>
+    <svg id="wave" style="transform: rotate(180deg); transition: 0.3s" viewBox="0 0 1440 270" version="1.1"
+      xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgba(222, 246, 216, 1)" offset="0%"></stop>
+          <stop stop-color="rgba(222, 246, 216, 1)" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path style="transform: translate(0, 0px); opacity: 1" fill="url(#sw-gradient-0)"
+        d="M0,108L80,126C160,144,320,180,480,171C640,162,800,108,960,108C1120,108,1280,162,1440,180C1600,198,1760,180,1920,153C2080,126,2240,90,2400,67.5C2560,45,2720,36,2880,49.5C3040,63,3200,99,3360,130.5C3520,162,3680,189,3840,180C4000,171,4160,126,4320,103.5C4480,81,4640,81,4800,81C4960,81,5120,81,5280,85.5C5440,90,5600,99,5760,94.5C5920,90,6080,72,6240,72C6400,72,6560,90,6720,94.5C6880,99,7040,90,7200,103.5C7360,117,7520,153,7680,171C7840,189,8000,189,8160,198C8320,207,8480,225,8640,234C8800,243,8960,243,9120,211.5C9280,180,9440,117,9600,76.5C9760,36,9920,18,10080,9C10240,0,10400,0,10560,9C10720,18,10880,36,11040,36C11200,36,11360,18,11440,9L11520,0L11520,270L11440,270C11360,270,11200,270,11040,270C10880,270,10720,270,10560,270C10400,270,10240,270,10080,270C9920,270,9760,270,9600,270C9440,270,9280,270,9120,270C8960,270,8800,270,8640,270C8480,270,8320,270,8160,270C8000,270,7840,270,7680,270C7520,270,7360,270,7200,270C7040,270,6880,270,6720,270C6560,270,6400,270,6240,270C6080,270,5920,270,5760,270C5600,270,5440,270,5280,270C5120,270,4960,270,4800,270C4640,270,4480,270,4320,270C4160,270,4000,270,3840,270C3680,270,3520,270,3360,270C3200,270,3040,270,2880,270C2720,270,2560,270,2400,270C2240,270,2080,270,1920,270C1760,270,1600,270,1440,270C1280,270,1120,270,960,270C800,270,640,270,480,270C320,270,160,270,80,270L0,270Z">
+      </path>
+    </svg>
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="alogo.png" alt="Nutri trackers logo" height="140px" width="280px" />
+      </a>
+    </div>
+
+    <div class="menu">
+      <a href="mealcreator.html">
+        <div class="dashboard">Meal Creator</div>
+      </a>
+      <a href="mealtracker.html">
+        <div class="mealtracker">Meal Tracker</div>
+      </a>
+      <a href="dailynutri.html">
+        <div class="dailynutri">Daily Nutri</div>
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Meal Creator</h1>
+    <br /><br /><br /><br /><br />
+    <button class="foodinspectorbutton">Food inspector</button>
+
+    <div class="buttons">
+       <!--<button class="bluebutton"></button>-->
+     <button class="greenbutton"></button>
+    </div>
+
+    <div class="grey-line-container" style="display: none">
+      <div class="meal-inputs">
+
+        <div class="box">
+          <label for="mealNameInput">Meal Name:</label>
+          <input type="text" id="mealNameInput" placeholder="Enter meal name" />
+          <!--Mealname inputfelt-->
+        </div>
+
+        <div class="dropdown box">
+          <label for="dropdown">Choose ingrediens and weigth:</label>
+          <div id="dropdownContainer">
+            <!-- Dropdowns kommer herunder -->
+          </div>
+
+          <button id="addIngredientButton">Add Ingredient</button>
+          <!-- Tilføj ingrediens knap -->
+        </div>
+
+        <div class="box">
+          <label for="inputDate">Date:</label>
+          <input type="date" id="inputDate" />
+        </div>
+
+        <button id="addMealButton">Add Meal</button>
+        <!--Addmeal knap-->
+
+      </div>
+    </div>
+
+    <!--Tabel-->
+    <table id="creatorTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Meal Name</th>
+          <th>Total kcal pr. 100g</th>
+          <th>Added on</th>
+          <th>#Ingrediens</th>
+          <th>Times Eaten</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- JavaScript vil opdatere dynamisk data, der vil blive tilføjet her -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="mealcreator.js"></script>
+</body>
+
+</html>

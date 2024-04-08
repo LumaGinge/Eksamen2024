@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+
+header {
+    height: 160px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.menu {
+    height: 100px;
+    width: 50%;
+    z-index: 1;
+    top: 10px; 
+    left: 370px;
+    right: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+}
+
+a {
+    /*!important overskriver alle regler, og bliver mest vigtig*/
+    text-decoration: none !important;
+    color: #757575 !important;
+}
+
+#foodTable {
+width: 100%;
+}
+
+table thead th {
+    background: #def6d8;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px; 
+}
+
+
+table td, 
+table th {
+    padding: 15px 20px; 
+    text-align: left; 
+}
+
+table tbody tr:nth-of-type(even) {
+    background: #eeeeee;
+}
+
+
+table tbody tr:last-of-type {
+    border-bottom: 1px solid black;
+}
+
+.details-button {
+    padding: 5px 10px;
+    background-color: #3498db;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
